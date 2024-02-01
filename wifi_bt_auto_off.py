@@ -10,7 +10,7 @@ DEBUG = False
 # kill wifi/bluetooth if not connected for this amount of time
 KILL_TIMER = 300  # in seconds 
 # the interval to check whether wifi/bluetooth is connected
-CHECK_INTERVAL = 15  # in seconds
+CHECK_INTERVAL = 30  # in seconds
 
 class Connections(Enum):
     WIFI = 0
