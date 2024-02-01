@@ -17,16 +17,20 @@ class Connections(Enum):
     BLUETOOTH = 1
 
 def is_connected(conn: Connections) -> bool:
+
     if conn == Connections.WIFI:
         wifi_check_res = subprocess.check_output(["nmcli", "connection", "show", "--active"]).decode('utf-8')
         return "wifi" in wifi_check_res
+
     elif conn == Connections.BLUETOOTH:
         bt_check_res = subprocess.check_output(["bluetoothctl", "devices", "Connected"]).decode('utf-8')
         return "Device" in bt_check_res
 
 def kill(conn: Connections) -> bool:
+
     if conn == Connections.WIFI: 
         subprocess.run(["rfkill", "block", "wifi"])
+
     elif conn == Connections.BLUETOOTH:
         subprocess.run(["rfkill", "block", "bluetooth"])
 
@@ -36,6 +40,7 @@ def is_on(conn: Connections) -> bool:
     if conn == Connections.WIFI:
         conn_check_res = subprocess.check_output(["rfkill", "list", "wifi", "--output", "soft"]).decode('utf-8')
         return "unblocked" in conn_check_res
+        
     elif conn == Connections.BLUETOOTH:
         conn_check_res = subprocess.check_output(["rfkill", "list", "bluetooth", "--output", "soft"]).decode('utf-8')
         return "unblocked" in conn_check_res
