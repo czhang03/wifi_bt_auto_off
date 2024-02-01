@@ -8,9 +8,9 @@ from enum import Enum
 # whether to log debug messages
 DEBUG = False
 # kill wifi/bluetooth if not connected for this amount of time
-KILL_TIMER = 10  # in seconds 
+KILL_TIMER = 300  # in seconds 
 # the interval to check whether wifi/bluetooth is connected
-CHECK_INTERVAL = 1  # in seconds
+CHECK_INTERVAL = 15  # in seconds
 
 class Connections(Enum):
     WIFI = 0
