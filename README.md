@@ -1,4 +1,4 @@
-WIFI BT Auto Off
+WIFI Bluetooth Auto-Off
 ---
 
 A small utility to automatically turn off bluetooth and wifi on linux.
