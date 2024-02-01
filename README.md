@@ -1,6 +1,8 @@
 WIFI Bluetooth Auto-Off
 ---
 
+**Warning: This utility is not yet tested for usability and reliability, use at your own risk**
+
 A small utility to automatically turn off bluetooth and wifi on linux.
 Inspired by the same functionality in [GrapheneOS](https://grapheneos.org/features#attack-surface-reduction)
 
