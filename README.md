@@ -13,16 +13,17 @@ all of which are included in most Linux distro.
 
 #### Manual
 
-(Recommended) 
+**Recommended**, also recommend to read the script before you run it. 
+The script is only around 100 line, and rather well documented.
 
 1. download `wifi_bt_auto_off.py`
 1. Copy to `$HOME/.config/autostart`
 1. Set it as executable by **right click > properties > Executable as Program**
 1. restart the computer to start the script
 
-### One Liner Install
+#### One Liner Install
 
-(Not recommended, in case the script is compromised).
+**Not recommended**, in case the script is compromised.
 
 ```
 bash <( curl -sSL https://raw.githubusercontent.com/czhang03/wifi_bt_auto_off/main/install.sh)
